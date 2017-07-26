@@ -1,0 +1,55 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.mh-mentions {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.mh-mentions input, .mh-mentions textarea {
+  width: 100%;
+  font-size: 1em;
+}
+
+.mh-mentions textarea {
+  height: 100px;
+  max-height: 300px;
+  resize: vertical;
+}
+
+.mh-mentions ol {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+
+.mh-mentions.display-top ol {
+  transform: translateY(-100%);
+  bottom: auto;
+  top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.mh-mentions ol li {
+  padding: 5px 10px;
+}
+
+.mh-mentions ol li.selected {
+  background-color: #efefef;
+}
+
+.mh-mentions ol li:hover {
+  cursor: pointer;
+}
